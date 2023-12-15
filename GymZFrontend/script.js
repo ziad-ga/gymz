@@ -45,6 +45,7 @@ function injectUser() {
     document.getElementById("nav-login").style.display = "none";
   } else {
     document.getElementById("nav-logout").style.display = "none";
+    document.getElementById("nav-coaches").style.display = "none";
     welcome.style.display = "none";
   }
 }
@@ -77,6 +78,10 @@ loginForm &&
         password,
       }),
     });
+    if (res.status === 400) {
+      error_element = document.querySelector("#login-form .error");
+      error_element.innerText = "Invalid Credentials.";
+    }
     let data = await res.json();
     localStorage.setItem("user", JSON.stringify(data));
     window.location.href = "./index.html";

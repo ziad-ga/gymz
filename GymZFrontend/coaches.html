@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Register</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coaches | GymZ</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <div class="container">
+    <div id="container">
+      <!-- Mobile Nav -->
       <nav class="mobile-nav">
         <div id="menu-links">
           <a href="index.html">Home</a>
@@ -47,44 +49,48 @@
           <li><a id="nav-logout" href="#">Logout</a></li>
         </ul>
       </nav>
-      <main class="register">
-          <div>
-            <form class="form" id="register-form">
-              <h1>Register</h1>
-              <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" />
-                <div class="error"></div>
-              </div>
-              <div class="input-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" />
-                <div class="error"></div>
-              </div>
-              <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
-                <div class="error"></div>
-              </div>
-              <div class="input-group">
-                <label for="cpassword">Confirm Password</label>
-                <input type="password" id="cpassword" name="cpassword" />
-                <div class="error"></div>
-              </div>
-              <button type="submit">Register</button>
-              <p>Already a member? <a href="login.html">login</a></p>
-            </form>
-          </div>
-        </div>
+
+      <main class="grid">
+        <h1 id="coaches-title">Our expert coaches!</h1>
+        <section class="coach">
+          <h2>Coach Simon</h2>
+          <img src="./images/coach1.jpg" alt="" />
+          <ul>
+            <li><p>3 years of experience</p></li>
+            <li><p>2 gold medals</p></li>
+            <li><p>Email: simonalan@mail.com</p></li>
+            <li><p>Phone: +555 5550</p></li>
+          </ul>
+        </section>
+        <section class="coach">
+          <h2>Coach Diana</h2>
+          <img src="./images/coach2.jpg" alt="" />
+          <ul>
+            <li><p>2 years of experience</p></li>
+            <li><p>1 gold medals</p></li>
+            <li><p>Email: dodina@mail.com</p></li>
+            <li><p>Phone: +555 5550</p></li>
+          </ul>
+        </section>
+        <section class="coach">
+          <h2>Coach Arnold</h2>
+          <img src="./images/coach3.jpg" alt="" />
+          <ul>
+            <li><p>10 years of experience</p></li>
+            <li><p>Email: arndoldo@mail.com</p></li>
+            <li><p>Phone: +555 5550</p></li>
+          </ul>
+        </section>
       </main>
+
       <footer>
         <div class="copyright">
           <p>&copy; Copyright 2021. All Rights Reserved.</p>
-          <p>
-            <a href="mailto:gymz@club.net">gymz@club.net</a>
-          </p>
+          <p><a href="mailto:gymz@club.net">gymz@club.net</a></p>
         </div>
       </footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

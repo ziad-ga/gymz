@@ -254,7 +254,7 @@ footer p a {
   outline: 0;
 }
 
-.input-group .error {
+.error {
   color: rgb(242, 18, 18);
   font-size: 16px;
   margin-top: 5px;
@@ -264,10 +264,29 @@ footer p a {
   border-color: #0cc477;
 }
 
-.input-group.error input {
+.error input {
   border-color: rgb(206, 67, 67);
 }
-
+.coach {
+  margin-top: 2%;
+}
+.coach img {
+  height: 60%;
+}
+.coach h2 {
+  text-align: center;
+}
+.coach ul {
+  margin-top: 3%;
+}
+.coach p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#coaches-title {
+  grid-column: 1 / span 3;
+  margin-bottom: 2%;
+}
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 630px), print {
   /* Tablet Viewport: Show tablet-desktop class,hide mobile class */
@@ -335,6 +354,8 @@ footer p a {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
+    justify-items: center;
+    width: 100%;
   }
 
   .pic-text {
